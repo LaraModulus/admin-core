@@ -1,8 +1,7 @@
 <?php
-namespace Escapeboy\AdminCore;
+namespace LaraMod\AdminCore;
 
 use App\Http\Controllers\Controller;
-use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class AdminCoreController extends Controller
