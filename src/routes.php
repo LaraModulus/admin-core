@@ -3,7 +3,7 @@
 Route::group([
 	'prefix' => 'admin',
 	'middleware' => ['web'],
-	'namespace' => 'Escapeboy\AdminCore',
+	'namespace' => 'LaraMod\AdminCore',
 	], function(){
 		Route::get('/', ['as' => 'admin', 'uses' => 'AdminCoreController@index']);
 		Route::get('login', ['as' => 'admin.login', 'uses' => 'AdminCoreController@getLogin']);
