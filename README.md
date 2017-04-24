@@ -6,7 +6,7 @@ https://github.com/LaraModulus
 Installation
 ---------------
 ```
-composer require LaraModulus\admin-core
+composer require LaraMod\admin-core
 ```
  **config/app.php**
  
