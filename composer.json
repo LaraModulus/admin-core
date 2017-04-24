@@ -1,6 +1,6 @@
 {
-    "name": "LaraMod/admin-core",
-    "description": "LaraMod Admin Core",
+    "name": "LaraModulus/admin-core",
+    "description": "LaraModulus Admin Core",
     "type": "library",
     "license": "MIT",
     "authors": [
