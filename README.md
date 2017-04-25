@@ -13,8 +13,7 @@ composer require laramod\admin-core
 ```php 
 'providers' => [
     ...
-    LaraMod\Admin\Core\AdminCoreServiceProvider::class,
-    Yajra\Datatables\DatatablesServiceProvider::class,
+    LaraMod\Admin\Core\AdminCoreServiceProvider::class
 ]
 ```
 **Publish config files**
