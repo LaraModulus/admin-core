@@ -1,5 +1,5 @@
 <?php
-namespace LaraMod\AdminCore;
+namespace LaraMod\Admin\Core;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
