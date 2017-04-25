@@ -1,6 +1,6 @@
 {
   "name": "ngSweetAlert",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "./SweetAlert.js",
   "author": "pedro@oitozero.com",
   "contributors": [
@@ -30,11 +30,11 @@
   },
   "devDependencies": {},
   "homepage": "https://github.com/oitozero/ngSweetAlert",
-  "_release": "1.1.1",
+  "_release": "1.1.2",
   "_resolution": {
     "type": "version",
-    "tag": "1.1.1",
-    "commit": "577e998ab255074995c67d5fbe60483ce49c9c65"
+    "tag": "1.1.2",
+    "commit": "fa33669a1b201f9a2e0e670c9e83d279d6e53b76"
   },
   "_source": "https://github.com/oitozero/ngSweetAlert.git",
   "_target": "*",
