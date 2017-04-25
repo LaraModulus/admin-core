@@ -28,13 +28,15 @@
     <link href="{{asset('assets/laramod/dashboard/bower_components/sweetalert/dist/sweetalert.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap-csp.css')}}" rel="stylesheet">
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular/angular.min.js')}}"></script>
-    <script src="{{asset('assets/laramod/dashboard/bower_components/requirejs/require.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-i18n/angular-locale_'.config('app.locale').'.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/angular-sanitize.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-sweetalert/SweetAlert.min.js')}}"></script>
-    @yield('css')
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.15/r-2.1.1/datatables.min.css"/>
+
+
+@yield('css')
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -59,7 +61,9 @@
 
     @yield('modals')
     <!-- jQuery -->
-    <script src="{{asset('assets/laramod/dashboard/sb/bower_components/jquery/dist/jquery.min.js')}}"></script>
+    <script src="{{asset('assets/laramod/dashboard/bower_components/jquery/dist/jquery.min.js')}}"></script>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/r-2.1.1/datatables.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{asset('assets/laramod/dashboard/sb/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
@@ -71,6 +75,8 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{asset('assets/laramod/dashboard/sb/dist/js/sb-admin-2.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/sweetalert/dist/sweetalert.min.js')}}"></script>
+
+
 
     @yield('js')
     <script>

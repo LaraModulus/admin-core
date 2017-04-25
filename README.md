@@ -13,7 +13,7 @@ composer require laramod\admin-core
 ```php 
 'providers' => [
     ...
-    LaraMod\Admin\Core\AdminCoreServiceProvider::class,
+    LaraMod\Admin\Core\AdminCoreServiceProvider::class
 ]
 ```
 **Publish config files**
