@@ -1,6 +1,6 @@
 <?php
 
-namespace LaraMod\AdminCore;
+namespace LaraMod\Admin\Core;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -15,7 +15,7 @@ class AdminCoreServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/views', 'admincore');
         $this->publishes([
-            	__DIR__.'/views' => base_path('resources/views/laramod/admin-core'),
+            	__DIR__.'/views' => base_path('resources/views/laramod/admin/core'),
         	]);
         $this->publishes([
                 __DIR__.'/assets' => public_path('assets/laramod/dashboard'),
@@ -36,6 +36,6 @@ class AdminCoreServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
                 __DIR__.'/../config/admincore.php', 'admincore'
             );
-        $this->app->make('LaraMod\AdminCore\AdminCoreController');
+        $this->app->make('LaraMod\Admin\Core\AdminCoreController');
     }
 }

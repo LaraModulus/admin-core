@@ -1,6 +1,6 @@
 {
     "name": "laramod/admin-core",
-    "description": "LaraModulus Admin Core",
+    "description": "LaraMod Admin Core",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -16,7 +16,7 @@
     },
     "autoload": {
       "psr-4": {
-        "LaraMod\\AdminCore\\": "src/"
+        "LaraMod\\Admin\\Core\\": "src/"
       }
     }
 }
