@@ -52,12 +52,25 @@ if(class_exists(LaraMod\Admin\Files\AdminFilesServiceProvider::class)) {
 }
 if(class_exists(LaraMod\Admin\Users\AdminUsersServiceProvider::class)) {
     $menu['users'] = [
-        'title'     => 'Users',
-        'link'      => 'admin/users',
-        'active'    => false,
-        'icon'      => 'fa fa-user',
-        'min_level' => 10,
-        'children'  => []
+        'users' => [
+            'title' => 'Users',
+            'link' => 'admin/users',
+            'active' => false,
+            'icon' => 'fa fa-users',
+            'min_level' => 10,
+            'children' => [
+                [
+                    'title' => 'Clients',
+                    'link' => 'admin/users',
+                    'children' => []
+                ],
+                [
+                    'title' => 'Admins',
+                    'link' => 'admin/admins',
+                    'children' => []
+                ]
+            ]
+        ]
     ];
 }
 return $menu;
