@@ -23,6 +23,9 @@ class AdminCoreServiceProvider extends ServiceProvider
         $this->publishes([
                 __DIR__.'/../config/admincore.php' => config_path('admincore.php')
             ], 'config');
+        $this->publishes([
+            __DIR__.'/../database/migrations/' => database_path('migrations')
+        ], 'migrations');
     }
 
     /**
@@ -37,5 +40,6 @@ class AdminCoreServiceProvider extends ServiceProvider
                 __DIR__.'/../config/admincore.php', 'admincore'
             );
         $this->app->make('LaraMod\Admin\Core\AdminCoreController');
+        $this->app->make('LaraMod\Admin\Core\Models\Admin');
     }
 }

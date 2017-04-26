@@ -2,7 +2,7 @@
 
 Route::group([
 	'prefix' => 'admin',
-	'middleware' => ['web'],
+	'middleware' => ['admin'],
 	'namespace' => 'LaraMod\Admin\Core',
 	], function(){
 		Route::get('/', ['as' => 'admin', 'uses' => 'AdminCoreController@index']);
