@@ -1,5 +1,4 @@
 <?php
-
 namespace LaraMod\Admin\Core\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
