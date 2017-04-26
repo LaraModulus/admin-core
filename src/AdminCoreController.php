@@ -9,7 +9,7 @@ class AdminCoreController extends Controller
 
     public function index()
     {
-        if(!auth()->check() && !auth()->viaRemember()) return redirect()->route('admin.login');
+        if(!auth('admin')->check() && !auth('admin')->viaRemember()) return redirect()->route('admin.login');
         return view('admincore::index');
     }
 
@@ -18,7 +18,7 @@ class AdminCoreController extends Controller
     }
 
     public function postLogin(Request $request){
-    	if (auth()->attempt(['email' => $request->get('email'), 'password' => $request->get('password')], $request->has('remember')))
+    	if (auth('admin')->attempt(['email' => $request->get('email'), 'password' => $request->get('password')], $request->has('remember')))
         {
             return redirect()->intended('admin');
         }
@@ -27,7 +27,7 @@ class AdminCoreController extends Controller
     }
 
     public function logout(){
-        auth()->logout();
+        auth('admin')->logout();
 
         return redirect()->route('admin.login');
     }
