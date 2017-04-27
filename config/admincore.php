@@ -1,5 +1,5 @@
 <?php
-$menu = [
+return [
     /**
      * Admin Core menu
      */
@@ -12,46 +12,70 @@ $menu = [
             'min_level' => 10,
             'children' => []
         ],
-    ]
-];
-if(class_exists(LaraMod\Admin\Blog\AdminBlogServiceProvider::class)){
-    $menu['blog'] = [
-        'title' => 'Blog',
-        'link' => 'admin/blog/posts',
-        'active' => false,
-        'icon' => 'fa fa-newspaper-o',
-        'min_level' => 10,
-        'children' => [
-            [
-                'title' => 'Posts',
-                'link' => 'admin/blog/posts',
-                'children' => [],
-            ],
-            [
-                'title' => 'Categories',
-                'link' => 'admin/blog/categories',
-                'children' => [],
-            ],
-            [
-                'title' => 'Comments',
-                'link' => 'admin/blog/comments',
-                'children' => [],
+        'blog' => [
+            'title' => 'Blog',
+            'link' => 'admin/blog/posts',
+            'active' => false,
+            'icon' => 'fa fa-newspaper-o',
+            'min_level' => 10,
+            'children' => [
+                [
+                    'title' => 'Posts',
+                    'link' => 'admin/blog/posts',
+                    'children' => [],
+                ],
+                [
+                    'title' => 'Categories',
+                    'link' => 'admin/blog/categories',
+                    'children' => [],
+                ],
+                [
+                    'title' => 'Comments',
+                    'link' => 'admin/blog/comments',
+                    'children' => [],
+                ]
             ]
-        ]
-    ];
-}
-if(class_exists(LaraMod\Admin\Files\AdminFilesServiceProvider::class)) {
-    $menu['files'] = [
-        'title'     => 'Files',
-        'link'      => 'admin/files',
-        'active'    => false,
-        'icon'      => 'fa fa-files-o',
-        'min_level' => 10,
-        'children'  => []
-    ];
-}
-if(class_exists(LaraMod\Admin\Users\AdminUsersServiceProvider::class)) {
-    $menu['users'] = [
+        ],
+        'orders' => [
+            'title' => 'Orders',
+            'link' => 'admin/orders',
+            'active' => false,
+            'icon' => 'fa fa-shopping-cart',
+            'min_level' => 10,
+            'children' => []
+        ],
+        'products' => [
+            'title' => 'Products',
+            'link' => 'admin/products',
+            'active' => false,
+            'icon' => 'fa fa-shopping-cart',
+            'min_level' => 10,
+            'children' => [
+                [
+                    'title' => 'Items',
+                    'link' => 'admin/products/items',
+                    'children' => [],
+                ],
+                [
+                    'title' => 'Categories',
+                    'link' => 'admin/products/categories',
+                    'children' => [],
+                ],
+                [
+                    'title' => 'Reviews',
+                    'link' => 'admin/products/reviews',
+                    'children' => [],
+                ]
+            ]
+        ],
+        'files' => [
+            'title' => 'Files',
+            'link' => 'admin/files',
+            'active' => false,
+            'icon' => 'fa fa-files-o',
+            'min_level' => 10,
+            'children' => []
+        ],
         'users' => [
             'title' => 'Users',
             'link' => 'admin/users',
@@ -71,6 +95,5 @@ if(class_exists(LaraMod\Admin\Users\AdminUsersServiceProvider::class)) {
                 ]
             ]
         ]
-    ];
-}
-return $menu;
+    ]
+];
