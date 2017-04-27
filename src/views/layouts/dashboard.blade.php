@@ -27,12 +27,15 @@
     <link href="{{asset('assets/laramod/dashboard/sb/bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/sweetalert/dist/sweetalert.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap-csp.css')}}" rel="stylesheet">
+    <link href="{{asset('assets/laramod/dashboard/bower_components/select2/dist/css/select2.min.css')}}" rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/laramod/dashboard/bower_components/select2-bootstrap-theme/dist/select2-bootstrap.min.css')}}" rel="stylesheet" type="text/css">
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular/angular.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-i18n/angular-locale_'.config('app.locale').'.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/angular-sanitize.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-sweetalert/SweetAlert.min.js')}}"></script>
+    <link href="{{asset('assets/laramod/dashboard/bower_components/select2/dist/css/select2.min.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.15/r-2.1.1/datatables.min.css"/>
 
 
@@ -75,6 +78,7 @@
     <!-- Custom Theme JavaScript -->
     <script src="{{asset('assets/laramod/dashboard/sb/dist/js/sb-admin-2.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/sweetalert/dist/sweetalert.min.js')}}"></script>
+    <script src="{{asset('assets/laramod/dashboard/bower_components/select2/dist/js/select2.min.js')}}"></script>
 
 
 
@@ -84,6 +88,10 @@
            $('body').on('click', ':not(.sa-confirm-button-container) .require-confirm', function(){
               return confirm('Are you sure?');
            });
+
+            $('.select2:not(.custom-select)').select2({
+                theme: "bootstrap"
+            });
         });
     </script>
 </body>
