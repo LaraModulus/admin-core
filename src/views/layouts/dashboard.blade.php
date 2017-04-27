@@ -22,8 +22,6 @@
     <link href="{{asset('assets/laramod/dashboard/sb/dist/css/sb-admin-2.css')}}" rel="stylesheet">
 
 
-
-    <!-- Custom Fonts -->
     <link href="{{asset('assets/laramod/dashboard/sb/bower_components/font-awesome/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/sweetalert/dist/sweetalert.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap-csp.css')}}" rel="stylesheet">
@@ -36,6 +34,7 @@
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-sweetalert/SweetAlert.min.js')}}"></script>
     <link href="{{asset('assets/laramod/dashboard/bower_components/select2/dist/css/select2.min.css')}}" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs/dt-1.10.15/r-2.1.1/datatables.min.css"/>
 
 
@@ -79,6 +78,7 @@
     <script src="{{asset('assets/laramod/dashboard/sb/dist/js/sb-admin-2.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/sweetalert/dist/sweetalert.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/select2/dist/js/select2.min.js')}}"></script>
+    <script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-checkbox/dist/js/bootstrap-checkbox.js')}}"></script>
 
 
 
@@ -92,6 +92,7 @@
             $('.select2:not(.custom-select)').select2({
                 theme: "bootstrap"
             });
+            $(':checkbox').checkboxpicker();
         });
     </script>
 </body>
