@@ -46,6 +46,8 @@
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-sweetalert/SweetAlert.min.js')}}"></script>
     <link href="{{asset('assets/laramod/dashboard/bower_components/select2/dist/css/select2.min.css')}}"
           rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css')}}"
+          rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css"
           href="{{asset('assets/laramod/dashboard/css/datatables.min.css')}}"/>
@@ -94,7 +96,8 @@
 <script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-checkbox/dist/js/bootstrap-checkbox.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/summernote/dist/summernote.min.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js')}}"></script>
-
+<script src="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
+<script src="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.'.config('app.locale').'.js')}}"></script>
 @yield('js')
 <script>
     $(function () {
@@ -109,6 +112,9 @@
         $('.editor').summernote();
         $('[data-role="tagsinput"]').tagsinput({
             trimValue: "true"
+        });
+        $('.datetimepicker').datetimepicker({
+            format: 'yyyy-mm-dd hh:ii'
         });
     });
 </script>
