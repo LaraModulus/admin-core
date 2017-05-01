@@ -34,6 +34,10 @@
           rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/select2-bootstrap-theme/dist/select2-bootstrap.min.css')}}"
           rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/laramod/dashboard/bower_components/summernote/dist/summernote.css')}}"
+          rel="stylesheet" type="text/css">
+    <link href="{{asset('assets/laramod/dashboard/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput-typeahead.css')}}"
+          rel="stylesheet" type="text/css">
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular/angular.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-i18n/angular-locale_'.config('app.locale').'.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/angular-sanitize.js')}}"></script>
@@ -44,7 +48,7 @@
           rel="stylesheet" type="text/css">
 
     <link rel="stylesheet" type="text/css"
-          href="https://cdn.datatables.net/v/bs/dt-1.10.15/r-2.1.1/datatables.min.css"/>
+          href="{{asset('assets/laramod/dashboard/css/datatables.min.css')}}"/>
 
 
 @yield('css')
@@ -74,7 +78,7 @@
 <!-- jQuery -->
 <script src="{{asset('assets/laramod/dashboard/bower_components/jquery/dist/jquery.min.js')}}"></script>
 
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs/dt-1.10.15/r-2.1.1/datatables.min.js"></script>
+<script type="text/javascript" src="{{asset('assets/laramod/dashboard/js/datatables.min.js')}}"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{{asset('assets/laramod/dashboard/sb/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
@@ -88,7 +92,8 @@
 <script src="{{asset('assets/laramod/dashboard/bower_components/sweetalert/dist/sweetalert.min.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/select2/dist/js/select2.min.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-checkbox/dist/js/bootstrap-checkbox.js')}}"></script>
-
+<script src="{{asset('assets/laramod/dashboard/bower_components/summernote/dist/summernote.min.js')}}"></script>
+<script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js')}}"></script>
 
 @yield('js')
 <script>
@@ -101,6 +106,10 @@
             theme: "bootstrap"
         });
         $(':checkbox').checkboxpicker();
+        $('.editor').summernote();
+        $('[data-role="tagsinput"]').tagsinput({
+            trimValue: "true"
+        });
     });
 </script>
 </body>
