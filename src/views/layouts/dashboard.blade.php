@@ -36,7 +36,7 @@
           rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/summernote/dist/summernote.css')}}"
           rel="stylesheet" type="text/css">
-    <link href="{{asset('assets/laramod/dashboard/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput-typeahead.css')}}"
+    <link href="{{asset('assets/laramod/dashboard/bower_components/jquery-ui/themes/base/jquery-ui.min.css')}}"
           rel="stylesheet" type="text/css">
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular/angular.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-i18n/angular-locale_'.config('app.locale').'.js')}}"></script>
@@ -51,6 +51,9 @@
 
     <link rel="stylesheet" type="text/css"
           href="{{asset('assets/laramod/dashboard/css/datatables.min.css')}}"/>
+    <link href="{{asset('assets/laramod/dashboard/bower_components/jquery.tagsinput/dist/jquery.tagsinput.min.css')}}"
+          rel="stylesheet" type="text/css">
+
 
 
 @yield('css')
@@ -95,9 +98,9 @@
 <script src="{{asset('assets/laramod/dashboard/bower_components/select2/dist/js/select2.min.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-checkbox/dist/js/bootstrap-checkbox.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/summernote/dist/summernote.min.js')}}"></script>
-<script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js')}}"></script>
+<script src="{{asset('assets/laramod/dashboard/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('assets/laramod/dashboard/bower_components/jquery.tagsinput/src/jquery.tagsinput.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
-<script src="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.'.config('app.locale').'.js')}}"></script>
 @yield('js')
 <script>
     $(function () {
@@ -110,12 +113,17 @@
         });
         $(':checkbox').checkboxpicker();
         $('.editor').summernote();
-        $('[data-role="tagsinput"]').tagsinput({
-            trimValue: "true"
+        $('[data-role="tagsinput"]').tagsInput({
+            width: '100%',
+            height: 'auto',
+            defaultText: ''
         });
         $('.datetimepicker').datetimepicker({
             format: 'yyyy-mm-dd hh:ii'
         });
+
+
+
     });
 </script>
 </body>
