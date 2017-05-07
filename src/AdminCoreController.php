@@ -4,9 +4,12 @@ namespace LaraMod\Admin\Core;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use LaraMod\Admin\Core\Traits\DashboardTrait;
 
 class AdminCoreController extends Controller
 {
+
+    use DashboardTrait;
 
     public function index()
     {
@@ -14,7 +17,8 @@ class AdminCoreController extends Controller
             return redirect()->route('admin.login');
         }
 
-        return view('admincore::index');
+
+        return view('admincore::index', ['widgets' => $this->getWidgets()]);
     }
 
     public function getLogin()

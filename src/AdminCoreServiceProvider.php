@@ -4,13 +4,10 @@ namespace LaraMod\Admin\Core;
 
 use Illuminate\Support\ServiceProvider;
 
+
 class AdminCoreServiceProvider extends ServiceProvider
 {
-    /**
-     * Bootstrap the application services.
-     *
-     * @return void
-     */
+
     public function boot()
     {
         $this->loadViewsFrom(__DIR__ . '/views', 'admincore');
@@ -26,6 +23,7 @@ class AdminCoreServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '/../database/migrations/' => database_path('migrations'),
         ], 'migrations');
+
     }
 
     /**
@@ -39,6 +37,7 @@ class AdminCoreServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__ . '/../config/admincore.php', 'admincore'
         );
-        $this->app->make('LaraMod\Admin\Core\AdminCoreController');
+        $this->app->make(AdminCoreController::class);
+
     }
 }
