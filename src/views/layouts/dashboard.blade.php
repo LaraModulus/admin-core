@@ -101,7 +101,7 @@
 <script src="{{asset('assets/laramod/dashboard/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/jquery.tagsinput/src/jquery.tagsinput.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
-@yield('js')
+
 <script>
     $(function () {
         $('body').on('click', ':not(.sa-confirm-button-container) .require-confirm', function () {
@@ -126,6 +126,7 @@
 
     });
 </script>
+@yield('js')
 </body>
 
 </html>
