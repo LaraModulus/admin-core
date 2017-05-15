@@ -5,95 +5,95 @@ return [
      */
     'menu' => [
         'dashboard' => [
-            'title' => 'Dashboard',
-            'link' => 'admin',
-            'active' => false,
-            'icon' => 'fa fa-home',
+            'title'     => 'Dashboard',
+            'link'      => 'admin',
+            'active'    => false,
+            'icon'      => 'fa fa-home',
             'min_level' => 10,
-            'children' => []
+            'children'  => [],
         ],
-        'blog' => [
-            'title' => 'Blog',
-            'link' => 'admin/blog/posts',
-            'active' => false,
-            'icon' => 'fa fa-newspaper-o',
+        'blog'      => [
+            'title'     => 'Blog',
+            'link'      => 'admin/blog/posts',
+            'active'    => false,
+            'icon'      => 'fa fa-newspaper-o',
             'min_level' => 10,
-            'children' => [
+            'children'  => [
                 [
-                    'title' => 'Posts',
-                    'link' => 'admin/blog/posts',
+                    'title'    => 'Posts',
+                    'link'     => 'admin/blog/posts',
                     'children' => [],
                 ],
                 [
-                    'title' => 'Categories',
-                    'link' => 'admin/blog/categories',
+                    'title'    => 'Categories',
+                    'link'     => 'admin/blog/categories',
                     'children' => [],
                 ],
                 [
-                    'title' => 'Comments',
-                    'link' => 'admin/blog/comments',
+                    'title'    => 'Comments',
+                    'link'     => 'admin/blog/comments',
                     'children' => [],
-                ]
-            ]
+                ],
+            ],
         ],
-        'orders' => [
-            'title' => 'Orders',
-            'link' => 'admin/orders',
-            'active' => false,
-            'icon' => 'fa fa-shopping-cart',
+        'orders'    => [
+            'title'     => 'Orders',
+            'link'      => 'admin/orders',
+            'active'    => false,
+            'icon'      => 'fa fa-shopping-cart',
             'min_level' => 10,
-            'children' => []
+            'children'  => [],
         ],
-        'products' => [
-            'title' => 'Products',
-            'link' => 'admin/products',
-            'active' => false,
-            'icon' => 'fa fa-shopping-cart',
+        'products'  => [
+            'title'     => 'Products',
+            'link'      => 'admin/products',
+            'active'    => false,
+            'icon'      => 'fa fa-shopping-cart',
             'min_level' => 10,
-            'children' => [
+            'children'  => [
                 [
-                    'title' => 'Items',
-                    'link' => 'admin/products/items',
+                    'title'    => 'Items',
+                    'link'     => 'admin/products/items',
                     'children' => [],
                 ],
                 [
-                    'title' => 'Categories',
-                    'link' => 'admin/products/categories',
+                    'title'    => 'Categories',
+                    'link'     => 'admin/products/categories',
                     'children' => [],
                 ],
                 [
-                    'title' => 'Reviews',
-                    'link' => 'admin/products/reviews',
+                    'title'    => 'Reviews',
+                    'link'     => 'admin/products/reviews',
                     'children' => [],
-                ]
-            ]
+                ],
+            ],
         ],
-        'files' => [
-            'title' => 'Files',
-            'link' => 'admin/files',
-            'active' => false,
-            'icon' => 'fa fa-files-o',
+        'files'     => [
+            'title'     => 'Files',
+            'link'      => 'admin/files',
+            'active'    => false,
+            'icon'      => 'fa fa-files-o',
             'min_level' => 10,
-            'children' => []
+            'children'  => [],
         ],
-        'users' => [
-            'title' => 'Users',
-            'link' => 'admin/users',
-            'active' => false,
-            'icon' => 'fa fa-users',
+        'users'     => [
+            'title'     => 'Users',
+            'link'      => 'admin/users',
+            'active'    => false,
+            'icon'      => 'fa fa-users',
             'min_level' => 10,
-            'children' => [
+            'children'  => [
                 [
-                    'title' => 'Clients',
-                    'link' => 'admin/users',
-                    'children' => []
+                    'title'    => 'Clients',
+                    'link'     => 'admin/users',
+                    'children' => [],
                 ],
                 [
-                    'title' => 'Admins',
-                    'link' => 'admin/admins',
-                    'children' => []
-                ]
-            ]
-        ]
-    ]
+                    'title'    => 'Admins',
+                    'link'     => 'admin/admins',
+                    'children' => [],
+                ],
+            ],
+        ],
+    ],
 ];
