@@ -38,12 +38,17 @@
           rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/jquery-ui/themes/base/jquery-ui.min.css')}}"
           rel="stylesheet" type="text/css">
+
+    <script src="{{asset('assets/laramod/dashboard/bower_components/jquery/dist/jquery.min.js')}}"></script>
+
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular/angular.min.js')}}"></script>
+
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-i18n/angular-locale_'.config('app.locale').'.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/angular-sanitize.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js')}}"></script>
     <script src="{{asset('assets/laramod/dashboard/bower_components/angular-sweetalert/SweetAlert.min.js')}}"></script>
+    <script src="{{asset('assets/laramod/dashboard/bower_components/angular-ui-uploader/dist/uploader.min.js')}}"></script>
     <link href="{{asset('assets/laramod/dashboard/bower_components/select2/dist/css/select2.min.css')}}"
           rel="stylesheet" type="text/css">
     <link href="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css')}}"
@@ -53,7 +58,7 @@
           href="{{asset('assets/laramod/dashboard/css/datatables.min.css')}}"/>
     <link href="{{asset('assets/laramod/dashboard/bower_components/jquery.tagsinput/dist/jquery.tagsinput.min.css')}}"
           rel="stylesheet" type="text/css">
-
+    <script>var app = angular.module('App', ['ui.bootstrap', 'ngSanitize', 'oitozero.ngSweetAlert', 'ui.uploader', 'ui.sortable']);</script>
 
 
 @yield('css')
@@ -81,9 +86,10 @@
 
 @yield('modals')
 <!-- jQuery -->
-<script src="{{asset('assets/laramod/dashboard/bower_components/jquery/dist/jquery.min.js')}}"></script>
 
+<script src="{{asset('assets/laramod/dashboard/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/laramod/dashboard/js/datatables.min.js')}}"></script>
+
 
 <!-- Bootstrap Core JavaScript -->
 <script src="{{asset('assets/laramod/dashboard/sb/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
@@ -98,10 +104,10 @@
 <script src="{{asset('assets/laramod/dashboard/bower_components/select2/dist/js/select2.min.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/bootstrap-checkbox/dist/js/bootstrap-checkbox.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/summernote/dist/summernote.min.js')}}"></script>
-<script src="{{asset('assets/laramod/dashboard/bower_components/jquery-ui/jquery-ui.min.js')}}"></script>
+
 <script src="{{asset('assets/laramod/dashboard/bower_components/jquery.tagsinput/src/jquery.tagsinput.js')}}"></script>
 <script src="{{asset('assets/laramod/dashboard/bower_components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js')}}"></script>
-
+<script src="{{asset('assets/laramod/dashboard/bower_components/angular-ui-sortable/sortable.min.js')}}"></script>
 <script>
     $(function () {
         $('body').on('click', ':not(.sa-confirm-button-container) .require-confirm', function () {
@@ -121,8 +127,6 @@
         $('.datetimepicker').datetimepicker({
             format: 'yyyy-mm-dd hh:ii'
         });
-
-
 
     });
 </script>
