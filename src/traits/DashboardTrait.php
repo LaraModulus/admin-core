@@ -12,6 +12,6 @@ trait DashboardTrait {
 
     public function getWidgets()
     {
-        return config('laramod.dashboard.widgets');
+        return config('laramod.dashboard.widgets', []);
     }
 }
