@@ -9,11 +9,13 @@
             <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->
+        @if(count($widgets))
         <div class="row">
             @foreach($widgets as $widget)
                 {!! $widget !!}
             @endforeach
         </div>
+        @endif
 
     </div>
 @stop
