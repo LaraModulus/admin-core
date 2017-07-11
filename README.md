@@ -18,6 +18,14 @@ composer require laramod/admin-core
     LaraMod\Admin\Core\AdminCoreServiceProvider::class
 ]
 ```
+
+ **config/app.php**
+ By default LaraMod uses English as language. If you need more than one locale, you can define it in config/app.php
+ 'fallback_locale' is used as default locale.
+ ```php
+ 'locales' => ['en'],
+ ```
+ 
 **config/auth.php**
 ```php
 'guards' => [
